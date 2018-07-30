@@ -1,0 +1,107 @@
+<html>
+  <head>
+      <meta charset="UTF-8"/>
+      <title>Jogo da memoria com imagens</title>
+		<link rel="stylesheet" type="text/css" href="css/cssJogo.css">
+		<script type="text/javascript" src="js/game3.js"></script>
+
+  </head>
+  <body>
+      <h1 >JOGO DA MEMÓRIA</h1>
+      <h2>Escolha seu nível >>> 
+      <input type="button" value="Nivel 1" onclick="trocaNivel1();">
+      <input type="button" value="Nivel 2" onclick="trocaNivel2();">
+      <input type="button" value="Nivel 3" onclick="trocaNivel3();"></h2>
+      <h2>Escolha se quer jogar sozinho ou com amigo >> <input type="button" value="SOLO" onclick="sozinho();"><input type="button" value="AMIGO" onclick="amigo();"></h2>
+    <center>
+        <label>CONTADOR</label>
+        <input type="text" id="contador" size="1"/>
+        <br>
+        <input type="text" id="msg" size="75" />
+
+        <input type="button" value="Novo Jogo" onclick="novoJogo();" />
+      <center>
+      <table border="0" align="center">
+        <tr>
+            <td><img src="img/0.jpg" name="campo" onclick="verificar( 0 );" /></td>
+            <td><img src="img/1.jpg" name="campo" onclick="verificar( 1 );" /></td>
+            <td><img src="img/2.jpg" name="campo" onclick="verificar( 2 );" /></td>
+            <td><img src="img/3.jpg" name="campo" onclick="verificar( 3 );" /></td>
+            <td><img src="img/4.jpg" name="campo" onclick="verificar( 4 );" /></td>
+            <td><img src="img/5.jpg" name="campo" onclick="verificar( 5 );" /></td>
+            <td><img src="img/6.jpg" name="campo" onclick="verificar( 6 );" /></td>
+            <td><img src="img/7.jpg" name="campo" onclick="verificar( 7 );" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/8.jpg" name="campo" onclick="verificar( 8 );" /></td>
+            <td><img src="img/9.jpg" name="campo" onclick="verificar( 9 );" /></td>
+            <td><img src="img/10.jpg" name="campo" onclick="verificar( 10 );" /></td>
+            <td><img src="img/11.jpg" name="campo" onclick="verificar( 11 );" /></td>
+            <td><img src="img/12.jpg" name="campo" onclick="verificar( 12 );" /></td>
+            <td><img src="img/13.jpg" name="campo" onclick="verificar( 13 );" /></td>
+            <td><img src="img/14.jpg" name="campo" onclick="verificar( 14 );" /></td>
+            <td><img src="img/15.jpg" name="campo" onclick="verificar( 15 );" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/16.jpg" name="campo" onclick="verificar( 16 );" /></td>
+            <td><img src="img/17.jpg" name="campo" onclick="verificar( 17 );" /></td>
+            <td><img src="img/18.jpg" name="campo" onclick="verificar( 18 );" /></td>
+            <td><img src="img/19.jpg" name="campo" onclick="verificar( 19 );" /></td>
+            <td><img src="img/20.jpg" name="campo" onclick="verificar( 20 );" /></td>
+            <td><img src="img/21.jpg" name="campo" onclick="verificar( 21 );" /></td>
+            <td><img src="img/22.jpg" name="campo" onclick="verificar( 22 );" /></td>
+            <td><img src="img/23.jpg" name="campo" onclick="verificar( 23 );" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/24.jpg" name="campo" onclick="verificar( 24 );" /></td>
+            <td><img src="img/25.jpg" name="campo" onclick="verificar( 25 );" /></td>
+            <td><img src="img/26.jpg" name="campo" onclick="verificar( 26 );" /></td>
+            <td><img src="img/27.jpg" name="campo" onclick="verificar( 27 );" /></td>
+            <td><img src="img/28.jpg" name="campo" onclick="verificar( 28 );" /></td>
+            <td><img src="img/29.jpg" name="campo" onclick="verificar( 29 );" /></td>
+            <td><img src="img/30.jpg" name="campo" onclick="verificar( 30 );" /></td>
+            <td><img src="img/31.jpg" name="campo" onclick="verificar( 31 );" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/32.jpg" name="campo" onclick="verificar( 32 );" /></td>
+            <td><img src="img/33.jpg" name="campo" onclick="verificar( 33 );" /></td>
+            <td><img src="img/34.jpg" name="campo" onclick="verificar( 34 );" /></td>
+            <td><img src="img/35.jpg" name="campo" onclick="verificar( 35 );" /></td>
+            <td><img src="img/36.jpg" name="campo" onclick="verificar( 36 );" /></td>
+            <td><img src="img/37.jpg" name="campo" onclick="verificar( 37 );" /></td>
+            <td><img src="img/38.jpg" name="campo" onclick="verificar( 38 );" /></td>
+            <td><img src="img/39.jpg" name="campo" onclick="verificar( 39 );" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/40.jpg" name="campo" onclick="verificar( 40 );" /></td>
+            <td><img src="img/41.jpg" name="campo" onclick="verificar( 41 );" /></td>
+            <td><img src="img/42.jpg" name="campo" onclick="verificar( 42 );" /></td>
+            <td><img src="img/43.jpg" name="campo" onclick="verificar( 43 );" /></td>
+            <td><img src="img/44.jpg" name="campo" onclick="verificar( 44 );" /></td>
+            <td><img src="img/45.jpg" name="campo" onclick="verificar( 45 );" /></td>
+            <td><img src="img/46.jpg" name="campo" onclick="verificar( 46 );" /></td>
+            <td><img src="img/47.jpg" name="campo" onclick="verificar( 47 );" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/48.jpg" name="campo" onclick="verificar( 48 );" /></td>
+            <td><img src="img/49.jpg" name="campo" onclick="verificar( 49 );" /></td>
+            <td><img src="img/50.jpg" name="campo" onclick="verificar( 50 );" /></td>
+            <td><img src="img/51.jpg" name="campo" onclick="verificar( 51 );" /></td>
+            <td><img src="img/52.jpg" name="campo" onclick="verificar( 52 );" /></td>
+            <td><img src="img/53.jpg" name="campo" onclick="verificar( 53 );" /></td>
+            <td><img src="img/54.jpg" name="campo" onclick="verificar( 54 );" /></td>
+            <td><img src="img/55.jpg" name="campo" onclick="verificar( 55 );" /></td>
+        </tr>
+        <tr>
+            <td><img src="img/56.jpg" name="campo" onclick="verificar( 56 );" /></td>
+            <td><img src="img/57.jpg" name="campo" onclick="verificar( 57 );" /></td>
+            <td><img src="img/58.jpg" name="campo" onclick="verificar( 58 );" /></td>
+            <td><img src="img/59.jpg" name="campo" onclick="verificar( 59 );" /></td>
+            <td><img src="img/60.jpg" name="campo" onclick="verificar( 60 );" /></td>
+            <td><img src="img/61.jpg" name="campo" onclick="verificar( 61 );" /></td>
+            <td><img src="img/62.jpg" name="campo" onclick="verificar( 62 );" /></td>
+            <td><img src="img/63.jpg" name="campo" onclick="verificar( 63 );" /></td>
+        </tr>
+      </table>
+  </body>
+</html>
